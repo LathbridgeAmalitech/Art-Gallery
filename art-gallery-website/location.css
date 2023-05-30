@@ -1,0 +1,211 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.map{
+    display: block;
+    height: 60vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/mobile/image-map.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0px auto;
+}
+
+
+
+.button{
+   
+    width: 260px;
+    height: 72px;
+    left: 16px;
+    top: 558px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.btn_text{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.button div{
+    width: 30%;
+    height: 100%;
+    background-color: #D5966C;
+    font-size: 50px;
+    justify-content: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* On Hover of the buttom */
+.button:hover{
+    background-color: #D5966C;
+}
+
+.button div:hover{
+    background-color: #000000; 
+}
+
+
+
+/* 2nd Section */
+
+.secSection{
+    padding: 10px;
+    background-color: #151515;
+    color: white;
+
+}
+
+.secSection h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 7dvb;
+    padding: 0px;
+
+}
+
+.secSection h3{
+    font-family: 'Big Shoulders Display', cursive;
+    color: #D5966C;
+    font-size: 3dvb;
+    padding: 0%;
+    line-height: 3dvb;
+    text-transform: uppercase;
+
+}
+
+.secSection ul{
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    line-height: 28px;
+    
+}
+
+.secSection p{
+    font-family: 'Outfit', sans-serif;
+    line-height: 28px;
+    
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    background-color:#D5966C;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 2dvb;
+    
+}
+
+footer h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bold;
+    font-size: 8dvw;
+    line-height: 8dvw;
+}
+
+footer h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bold;
+    font-size: 8dvw;
+    line-height: 8dvw;
+}
+
+footer p{
+    font-family: 'Outfit', sans-serif;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer div svg{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+footer h1 span {
+    display: block;
+}
+
+
+
+/* TABLET VIEWS, SCREENS FROM 640px Going  */
+
+@media (width>640px) {
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer h1{
+        font-size: 5dvw;
+        width:30%;
+        line-height: 5dvw;
+    }
+
+    footer p{
+        width:45%;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 2dvw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer div{
+        width:25%;
+        margin-left: 30px;
+    }
+
+    .secSection{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secSection div{
+        margin-left: 70px;
+    }
+
+    .secSection div ul li{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .map{
+        background-image: url('./assets/tablet/image-map.png');
+        height: 70vh;
+        
+    }
+
+}
+
+
+@media (width>1100px) {
+
+    .map{
+        background-image: url('./assets/desktop/image-map.png');
+        height: 70vh;
+        
+    }
+
+}
