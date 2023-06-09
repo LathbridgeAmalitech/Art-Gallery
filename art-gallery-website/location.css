@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .map{
@@ -152,7 +153,11 @@ footer h1 span {
 /* TABLET VIEWS, SCREENS FROM 640px Going  */
 
 @media (width>640px) {
-    
+    section{
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
     footer{
         display: flex;
         justify-content: space-between;
@@ -177,12 +182,33 @@ footer h1 span {
         margin-left: 30px;
     }
 
+    .footer{
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .sec2footer{
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .secText{
+        line-height: 50px;
+        max-width: 500px;
+    }
+
     .secSection{
         display: flex;
         justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .secSection div{
+    .king{
         margin-left: 70px;
     }
 
@@ -197,6 +223,11 @@ footer h1 span {
         
     }
 
+    .icons{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
 }
 
 
@@ -206,6 +237,14 @@ footer h1 span {
         background-image: url('./assets/desktop/image-map.png');
         height: 70vh;
         
+    }
+
+    .footer{
+      width: 80%; 
+    }
+
+    .sec2footer{
+        width: 80%; 
     }
 
 }

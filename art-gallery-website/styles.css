@@ -179,7 +179,7 @@ footer h1{
 footer p{
     color: rgb(228, 228, 228);
     font-family: 'Outfit', sans-serif;
-    line-height: 28px;
+    line-height: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -219,7 +219,7 @@ footer div svg{
         width:45%;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 2dvw;
+        font-size: 1.5dvw;
         align-items: center;
         justify-content: center;
     }
@@ -232,26 +232,35 @@ footer div svg{
     .section2{
         display: flex;
         flex-wrap: wrap;
+        max-width: 98%;
+        overflow: hidden !important;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
         
     }
     .section_images{
         display: flex;
     }
+   
 
     .section2 h1{
         font-size: 60px;
         line-height: 60px;
     }
     .comeandbeinspired{
-        width: 300px;
-        height: auto;
+        width: 250px;
+        height: 330px;
+        position: absolute;
+        left: 55dvw;
+        bottom: 1vh;
+        margin-right: 0px;
         margin-left: auto;
-        margin-right: auto;
 
     }
 
     .your_day{
-        width: 400px !important;
+        width: 40vw !important;
         margin-left: auto !important;
         margin-right: auto !important;
         height: auto;
@@ -259,17 +268,24 @@ footer div svg{
     }
 
     .section_images{
-       gap: 10px;
+       gap: 15px;
         
     }
 
     .second_container{
-        width: 50vw;
+        width: 40vw;
         display: flex;
-        flex-direction: row-reverse;
+        background-image: url('./assets/tablet/image-grid-1.jpg');
     }
 
-   
+    #spak{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .section1 h1{
         font-size: 70px;
@@ -306,8 +322,23 @@ footer div svg{
 
     }
 
+    .footer{
+        display: flex;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
 
+    }
 
+    .icons{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #thearts{
+        max-width: 80%;
+        line-height: 30px;
+    }
 }
 
 
@@ -322,6 +353,12 @@ footer div svg{
 
 
 @media (width>1000px) {
+
+    .second_container{
+        width: 50vw;
+        display: flex;
+        background-image: url('./assets/desktop/image-grid-1.jpg');
+    }
 
     .section1{
         margin-bottom: 0px;
@@ -366,8 +403,9 @@ footer div svg{
         text-transform: uppercase;
         color: #ffffff;
         top: 20%;
-        left: 10vw;
+        left: 12vw;
         right: 60%;
+        mix-blend-mode:difference;
     }
     #mart span {
         display: block;
@@ -375,6 +413,25 @@ footer div svg{
         line-height: 60px;
     }
    
-    
+    .comeandbeinspired{
+        width: 390px;
+        height: 330px;
+        position: absolute;
+        left: 59%;
+        right: auto;
+        bottom: 1vh;
+        margin-right: 0px;
+        margin-left: 0px;
 
+    }
+   
+    #thearts{
+        max-width: 80%;
+        line-height: 40px;
+        padding-bottom: 40px;
+    }
+
+    .sib{
+       margin-left: 60%;
+    }
 }
